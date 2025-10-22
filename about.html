@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Where Ashes Bloom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            color: #3f3f3f;
+        }
+
+        .page-section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .bg-light {
+            background: #fbf3ea; /* first light tone */
+        }
+
+        .bg-lighter {
+            background: #fdf7f0; /* slightly lighter tone */
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #3f3f3f;
+        }
+
+        .page-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .team-card {
+            background-color: #fffaf6;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        .team-card h4 {
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .team-card p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        blockquote {
+            font-style: italic;
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #555;
+            border-left: 4px solid #e1bfa3;
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="assets/logo.png" alt="Where Ashes Bloom Logo" class="site-logo">
+                    <span class="brand-text">Where Ashes Bloom</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="learn.html" class="nav-link">Learn</a></li>
+                    <li class="nav-item"><a href="deal.html" class="nav-link">Deal with Burnout</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link active">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About -->
+        <section class="page-section bg-lighter">
+            <h1 class="section-title">About Us</h1>
+            <p>We built <strong>Where Ashes Bloom</strong> as a safe, gentle space for people facing burnout —  
+            a place to pause, understand, and heal with compassion and awareness.</p>
+        </section>
+
+        <!-- Mission -->
+        <section class="page-section bg-light">
+            <h2 class="section-title">Our Mission</h2>
+            <p>Our mission is to help students and professionals recognize burnout early, rebuild balance,  
+            and rediscover joy in their daily lives through simple, human-centered support.</p>
+        </section>
+
+        <!-- Vision -->
+        <section class="page-section bg-lighter">
+            <h2 class="section-title">Our Vision</h2>
+            <p>We believe healing starts with understanding — and that recovery is not a sign of weakness, but of strength.  
+            Our goal is to make mental health awareness calm, kind, and accessible to everyone.</p>
+        </section>
+
+        <!-- Team -->
+        <section class="page-section bg-light">
+            <h2 class="section-title">Our Team</h2>
+            <p><strong>Where Ashes Bloom</strong> is a student-led initiative created to promote awareness about burnout  
+            among university students and young professionals.</p>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <h4>Mahdi Zein Al Dine</h4>
+                    <p>Mechatronics Engineering</p>
+                </div>
+                <div class="team-card">
+                    <h4>Dana Hachem</h4>
+                    <p>Mechatronics Engineering</p>
+                </div>
+                <div class="team-card">
+                    <h4>Sleiman Al Dhaybi</h4>
+                    <p>Nursing</p>
+                </div>
+                <div class="team-card">
+                    <h4>Chloe El Daccache</h4>
+                    <p>Nursing</p>
+                </div>
+                <div class="team-card">
+                    <h4>Noama Obeid</h4>
+                    <p>Nursing</p>
+                </div>
+                <div class="team-card">
+                    <h4>Aman Ranko</h4>
+                    <p>Nursing</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing Quote -->
+        <section class="page-section bg-lighter">
+            <blockquote>“Even from the ashes, something beautiful can bloom again.  
+            Healing takes time — and you deserve that time.”</blockquote>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">If you’re struggling with burnout or emotional distress, please reach out for professional help.  
+            This site is for awareness and education only.</p>
+        </div>
+    </footer>
+</body>
+</html>
