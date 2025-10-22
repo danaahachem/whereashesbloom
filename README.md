@@ -114,28 +114,6 @@ Replace all "TODO:" text with your actual content. The structure is semantic and
 ### Logo
 Replace `assets/logo.svg` with your own logo file. The current logo is a simple placeholder.
 
-## 🌐 Deployment
-
-### GitHub Pages (Recommended)
-
-1. **Create a GitHub repository** and upload your files
-
-2. **Enable GitHub Pages**:
-   - Go to repository Settings
-   - Scroll to "Pages" section
-   - Select "Deploy from a branch"
-   - Choose "main" branch and "/ (root)" folder
-   - Click "Save"
-
-3. **Your site will be available** at `https://yourusername.github.io/repository-name`
-
-### Other Hosting Options
-
-- **Netlify**: Drag and drop your project folder
-- **Vercel**: Connect your GitHub repository
-- **GitHub Pages**: As described above
-- **Any static hosting service**: Upload the files as-is
-
 ## ♿ Accessibility Features
 
 - **Keyboard Navigation**: All interactive elements are keyboard accessible
@@ -189,5 +167,6 @@ This project is open source and available under the [MIT License](LICENSE).
 For questions about implementation or customization, please refer to the code comments or create an issue in the repository.
 
 ---
+
 
 **Note**: This website provides general information only and is not a substitute for professional medical advice. Always consult with qualified healthcare providers for medical concerns.
