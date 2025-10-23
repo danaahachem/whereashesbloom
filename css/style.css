@@ -145,7 +145,7 @@ body {
 .team-card {
     background: #fff;
     border-radius: 16px;
-    padding: 1px 1px;              /* reduced padding */
+    padding: 10px 6px;              /* reduced padding */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
     transition: all 0.3s ease;
     cursor: pointer;
