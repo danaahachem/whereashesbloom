@@ -114,6 +114,66 @@ body {
   align-items: center;
   gap: var(--space-xs);
 }
+/* ===== Our Team Section ===== */
+.page-section.bg-lighter {
+    background-color: #f8f9fc;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.page-section.bg-lighter .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.page-section.bg-lighter p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+.team-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1px 1px;              /* reduced padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;         /* centers text vertically */
+    min-height: 100px;               /* fixed compact height */
+}
+
+
+.team-card:hover {
+    transform: translateY(-8px);
+    background: #eef3ff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.team-name {
+    margin-bottom: 4px;              /* smaller gap between name & role */
+    font-size: 1.1rem;
+}
+
+.team-role {
+    font-size: 0.95rem;
+    line-height: 1.2;                /* tighter text */
+}
+
 
 .logo {
     display: flex;
