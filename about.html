@@ -79,6 +79,47 @@
             border-left: 4px solid #e1bfa3;
             padding-left: 1rem;
         }
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .page-section {
+                padding: 40px 20px;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .page-section p {
+                font-size: 1rem;
+            }
+            
+            blockquote {
+                font-size: 1rem;
+                padding-left: 0.75rem;
+                border-left-width: 3px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .page-section {
+                padding: 30px 15px;
+            }
+            
+            .section-title {
+                font-size: 1.25rem;
+            }
+            
+            .page-section p {
+                font-size: 0.95rem;
+            }
+            
+            blockquote {
+                font-size: 0.95rem;
+                padding-left: 0.5rem;
+                border-left-width: 2px;
+            }
+        }
     </style>
 </head>
 
@@ -90,6 +131,12 @@
                     <img src="assets/logo.png" alt="Where Ashes Bloom Logo" class="site-logo">
                     <span class="brand-text">Where Ashes Bloom</span>
                 </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-overlay"></div>
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="learn.html" class="nav-link">Learn</a></li>

@@ -6,12 +6,86 @@
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functionality
+    initMobileMenu();
     initScrollReveal();
     initTabSwitching();
     initBackToTop();
     initSmoothScrolling();
     initAccessibility();
 });
+
+/**
+ * Initialize mobile menu functionality
+ */
+function initMobileMenu() {
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const navOverlay = document.querySelector('.nav-overlay');
+    
+    if (!mobileMenuToggle || !navMenu) return; // Only run if elements exist
+    
+    function toggleMenu() {
+        const isOpen = navMenu.classList.contains('active');
+        
+        // Toggle menu state
+        navMenu.classList.toggle('active');
+        mobileMenuToggle.classList.toggle('active');
+        if (navOverlay) {
+            navOverlay.classList.toggle('active');
+        }
+        
+        // Update ARIA attributes
+        mobileMenuToggle.setAttribute('aria-expanded', !isOpen);
+        
+        // Prevent body scroll when menu is open
+        if (!isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    }
+    
+    function closeMenu() {
+        navMenu.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+        if (navOverlay) {
+            navOverlay.classList.remove('active');
+        }
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+    }
+    
+    // Toggle menu on button click
+    mobileMenuToggle.addEventListener('click', toggleMenu);
+    
+    // Close menu when clicking overlay
+    if (navOverlay) {
+        navOverlay.addEventListener('click', closeMenu);
+    }
+    
+    // Close menu when clicking a nav link
+    const navLinks = navMenu.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // Small delay to allow navigation to complete
+            setTimeout(closeMenu, 100);
+        });
+    });
+    
+    // Close menu on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768 && navMenu.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+}
 
 /**
  * Initialize scroll reveal animations for sections
